@@ -1,0 +1,8 @@
+name: safe-continual
+channels:
+  - defaults
+dependencies:
+  - ipython
+  - python=3.10
+  - notebook
+  - matplotlib
