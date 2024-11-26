@@ -9,7 +9,7 @@ Submitted to ECC 2025.
 - [`Safe-Policy-Optimization/`](./Safe-Policy-Optimization/) contains the code from [this respository](https://github.com/PKU-Alignment/Safe-Policy-Optimization).
     - The algorithms we used are inside the [`/safepo/single_agent/`](./Safe-Policy-Optimization/safepo/single_agent/) directory. These are [`cpo.py`](./Safe-Policy-Optimization/safepo/single_agent/cpo.py) (CPO), [`ppo_ewc_cost.py`](./Safe-Policy-Optimization/safepo/single_agent/ppo_ewc_cost.py) (Safe EWC), and [`ppo_ewc.py`](./Safe-Policy-Optimization/safepo/single_agent/ppo_ewc.py) (PPO+EWC). [`ppo_ewc_lambda.py`](./Safe-Policy-Optimization/safepo/single_agent/ppo_ewc_lambda.py) is used for tuning the $\lambda$ hyperparameter.
 
-- ['safety-gymnasium/'](./safety-gymnasium/) contains the code from [this repository](https://github.com/PKU-Alignment/safety-gymnasium).
+- [`safety-gymnasium/`](./safety-gymnasium/) contains the code from [this repository](https://github.com/PKU-Alignment/safety-gymnasium).
     - The continual RL environments we created that are used in the paper are in ['/safety_gymnasium/tasks/safe_velocity/'](./safety-gymnasium/safety_gymnasium/tasks/safe_velocity/). Specifically, the [`safety_half_cheetah_valocity_v4.py`](./safety-gymnasium/safety_gymnasium/tasks/safe_velocity/safety_half_cheetah_velocity_v4.py) is the HalfCheetah nonstationary safety constrained task and [`safety_ant_velocity_v2.py`](./safety-gymnasium/safety_gymnasium/tasks/safe_velocity/safety_ant_velocity_v2.py) is the Ant.
 
 - [`Analyze Results.ipynb`](./Analyze%20Results.ipynb) contains the analysis of the results.
