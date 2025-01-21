@@ -138,12 +138,12 @@ def main(args, cfg_env=None):
         log_dir=args.log_dir,
         seed=str(args.seed),
     )
-    rew_deque = deque(maxlen=50)
-    cost_deque = deque(maxlen=50)
-    len_deque = deque(maxlen=50)
-    eval_rew_deque = deque(maxlen=50)
-    eval_cost_deque = deque(maxlen=50)
-    eval_len_deque = deque(maxlen=50)
+    rew_deque = deque(maxlen=20)
+    cost_deque = deque(maxlen=20)
+    len_deque = deque(maxlen=20)
+    eval_rew_deque = deque(maxlen=20)
+    eval_cost_deque = deque(maxlen=20)
+    eval_len_deque = deque(maxlen=20)
     logger.save_config(dict_args)
     logger.setup_torch_saver(policy.actor)
     logger.log("Start with training.")
